@@ -27,7 +27,7 @@ export default async function createQuestionCollection(){
 
     console.log("Question Attribute is created")
 
-
+    
     //create index
     await Promise.all([
         database.createIndex(

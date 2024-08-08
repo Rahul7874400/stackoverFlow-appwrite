@@ -25,7 +25,7 @@ export default async function getOrCreateDB(){
             console.log("Database is created")
 
         } catch (error) {
-            console.log("Error is connecting the database")
+            console.log("Error is connecting the database",error)
         }
     }
 

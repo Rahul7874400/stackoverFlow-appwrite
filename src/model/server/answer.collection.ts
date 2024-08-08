@@ -9,7 +9,7 @@ export default async function createAnswerCollection(){
 
     await database.createCollection(db,answerCollection,answerCollection,[
         Permission.read('any'),
-        Permission.read('Users'),
+        Permission.read('users'),
         Permission.update('users'),
         Permission.delete('users'),
         Permission.create('users')

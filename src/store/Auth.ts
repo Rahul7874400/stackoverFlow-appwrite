@@ -27,7 +27,7 @@ interface IAuthStore {
         password : string
     ):Promise<{success : boolean , error?:AppwriteException | null;
     }>
-    CreateAccount(
+    createAccount(
         name : string,
         email : string,
         password : string
@@ -84,7 +84,7 @@ persist(
             }
         },
 
-        async CreateAccount(name, email, password) {
+        async createAccount(name, email, password) {
             try {
                 await account.create(ID.unique(),email,password,name)
 
